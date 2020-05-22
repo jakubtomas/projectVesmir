@@ -19,6 +19,9 @@ public class Slnko {
 
 
     public static Slnko getInstance(){
+        if(instance == null ){
+            return instance= new Slnko();
+        }
         return instance;
     }
 
